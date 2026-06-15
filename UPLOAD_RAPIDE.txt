@@ -1,0 +1,60 @@
+═══════════════════════════════════════════════════════════════
+  GUIDE RAPIDE - RE-UPLOAD COMPLET SUR HOSTINGER
+═══════════════════════════════════════════════════════════════
+
+1️⃣  REBUILDER EN LOCAL
+   ────────────────────────────────────────────────────────────
+   cd C:\Users\chetouane.n\Desktop\electrotechernp
+   npm run build
+   
+   ✅ Dossier "out/" créé
+
+
+2️⃣  SUPPRIMER TOUT SUR HOSTINGER
+   ────────────────────────────────────────────────────────────
+   Via FTP → public_html/
+   → Sélectionner TOUT (Ctrl+A)
+   → Supprimer (Suppr)
+
+
+3️⃣  UPLOAD TOUT LE CONTENU DE "out/"
+   ────────────────────────────────────────────────────────────
+   Via FTP → public_html/
+   → Upload TOUT le contenu de out/
+   
+   Structure finale :
+   public_html/
+   ├── index.html
+   ├── _next/
+   ├── img/
+   ├── api/
+   ├── qui-sommes-nous/
+   ├── panneaux-solaires/
+   ├── chercher-un-prestataire/
+   ├── nos-realisations/
+   ├── contact/
+   ├── robots.txt
+   ├── sitemap.xml
+   └── .htaccess  ← IMPORTANT !
+
+
+4️⃣  UPLOAD LE .htaccess
+   ────────────────────────────────────────────────────────────
+   Depuis : C:\Users\chetouane.n\Desktop\electrotechernp\.htaccess
+   Vers : public_html/.htaccess
+   
+   ⚠️ Le .htaccess doit être à la RACINE de public_html/
+
+
+5️⃣  VIDER LE CACHE ET TESTER
+   ────────────────────────────────────────────────────────────
+   Ctrl + Shift + Suppr → Effacer le cache
+   Ctrl + Shift + R → Recharger la page
+   
+   Test : https://lawngreen-lion-258080.hostingersite.com/_next/static/css/3688719039bf1e2e.css
+   → Doit afficher du CSS (pas du HTML)
+
+
+═══════════════════════════════════════════════════════════════
+  ✅ C'EST TOUT !
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,27 @@
+============================================
+  DEPOT SUR HOSTINGER - Glisser-deposer
+============================================
+
+1. Sur Hostinger : ouvrir Gestionnaire de fichiers
+   -> aller dans le dossier  public_html
+
+2. Supprimer l'ancien contenu de public_html
+   (sauvegarder .htaccess si vous l'aviez modifie)
+
+3. Dans CE dossier (out) :
+   - Selectionner TOUT le contenu : Ctrl+A
+   - Glisser-deposer dans public_html
+
+   IMPORTANT : deposez le CONTENU de ce dossier
+   (index.html, _next, img, api, .htaccess, etc.)
+   PAS le dossier "out" lui-meme.
+
+   Si vous deposez le dossier "out", vous auriez
+   public_html/out/index.html -> FAUX
+
+   Il faut : public_html/index.html -> CORRECT
+
+4. Verifier : public_html doit contenir directement
+   index.html, _next/, img/, api/, .htaccess
+
+============================================
