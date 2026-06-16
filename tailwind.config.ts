@@ -10,16 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#63a6ff",
-          500: "#63a6ff",
-          600: "#4f90e6",
-          700: "#3b7fd4",
-          800: "#2563eb",
-          900: "#1e40af",
+          50: "#f3faf0",
+          100: "#e5f5cf",
+          200: "#c8e6b0",
+          300: "#a3d484",
+          400: "#7cbc58",
+          500: "#5a9e3a",
+          600: "#4a8530",
+          700: "#3d6b28",
+          800: "#335523",
+          900: "#2a4620",
         },
         secondary: {
           50: "#f3faf0",
@@ -34,10 +34,10 @@ const config: Config = {
           900: "#2a4620",
         },
         brand: {
-          blue: "#63a6ff",
+          blue: "#5a9e3a",
           green: "#5a9e3a",
           dark: "#303843",
-          sky: "#d9f1ff",
+          sky: "#e8f5e3",
           minth: "#e5f5cf",
         },
         dark: {

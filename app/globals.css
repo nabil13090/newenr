@@ -5,17 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap');
 
 :root {
-  --primary: #63a6ff;
-  --primary-dark: #4f90e6;
-  --primary-grad: radial-gradient(circle at 30% 50%, #8fc4ff, #63a6ff);
-  /* alias legacy — plus d'orange visible */
+  --primary: #5a9e3a;
+  --primary-dark: #4a8530;
+  --primary-grad: radial-gradient(circle at 30% 50%, #a3d484, #5a9e3a);
+  /* alias legacy — couleur accent unique */
   --orange: var(--primary);
   --orange-grad: var(--primary-grad);
-  --blue: #63a6ff;
-  --blue-dark: #4f90e6;
+  --blue: #5a9e3a;
+  --blue-dark: #4a8530;
   --green: #5a9e3a;
   --dark: #303843;
-  --sky: #d9f1ff;
+  --sky: #e8f5e3;
   --minth: #e5f5cf;
   --peach: #e5f5cf;
   --grey-light: #f4f4f5;
@@ -106,7 +106,7 @@ p {
 .garanties-bar {
   padding-block: 1.5rem 1.25rem;
   background: linear-gradient(180deg, var(--sky) 0%, #fff 100%);
-  border-bottom: 1px solid rgba(99, 166, 255, 0.15);
+  border-bottom: 1px solid rgba(90, 158, 58, 0.15);
 }
 
 .garanties-bar__title {
@@ -140,7 +140,7 @@ p {
   max-width: 72rem;
   margin-inline: auto;
   background: #fff;
-  border: 1px solid rgba(99, 166, 255, 0.12);
+  border: 1px solid rgba(90, 158, 58, 0.12);
   box-shadow: 0 12px 48px rgba(48, 56, 67, 0.08);
   clip-path: polygon(0 0, calc(100% - var(--corner)) 0, 100% var(--corner), 100% 100%, 0 100%);
   overflow: hidden;
@@ -281,8 +281,8 @@ p {
 }
 
 .service-item:hover {
-  border-color: rgba(99, 166, 255, 0.35);
-  box-shadow: 0 6px 24px rgba(99, 166, 255, 0.12);
+  border-color: rgba(90, 158, 58, 0.35);
+  box-shadow: 0 6px 24px rgba(90, 158, 58, 0.12);
   transform: translateY(-2px);
 }
 
@@ -424,7 +424,7 @@ p {
 }
 
 .cta--blue:hover {
-  background: #4f90e6;
+  background: var(--primary-dark);
 }
 
 .cta--secondary {
@@ -1793,8 +1793,8 @@ p {
 }
 
 .stepcard:hover {
-  border-color: rgba(99, 166, 255, 0.35);
-  box-shadow: 0 4px 16px rgba(99, 166, 255, 0.1);
+  border-color: rgba(90, 158, 58, 0.35);
+  box-shadow: 0 4px 16px rgba(90, 158, 58, 0.1);
 }
 
 .autocons-block {
@@ -2353,7 +2353,7 @@ p {
   gap: 0.2rem;
   padding: 0.85rem 1rem;
   background: #fff;
-  border: 1px solid rgba(99, 166, 255, 0.15);
+  border: 1px solid rgba(90, 158, 58, 0.15);
   clip-path: polygon(0 0, calc(100% - 0.75rem) 0, 100% 0.75rem, 100% 100%, 0 100%);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
@@ -2401,7 +2401,7 @@ p {
 }
 
 .faq-item {
-  border: 1px solid rgba(99, 166, 255, 0.15);
+  border: 1px solid rgba(90, 158, 58, 0.15);
   background: #fff;
 }
 
@@ -2459,7 +2459,7 @@ p {
   gap: 0.5rem;
   padding: 1.25rem;
   background: #fff;
-  border: 1px solid rgba(99, 166, 255, 0.12);
+  border: 1px solid rgba(90, 158, 58, 0.12);
   box-shadow: 0 4px 20px rgba(48, 56, 67, 0.05);
 }
 
@@ -2509,7 +2509,7 @@ p {
 .seo-hub-dept {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(99, 166, 255, 0.12);
+  border-top: 1px solid rgba(90, 158, 58, 0.12);
 }
 
 .seo-hub-dept:first-of-type {
