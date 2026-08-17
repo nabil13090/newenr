@@ -176,6 +176,38 @@ export default function ChercherUnPrestataire() {
       <section className="section" style={{ background: "var(--grey-light)" }}>
         <div className="container">
           <SectionHead
+            label="Référence client"
+            title="Exemple de prestataire — Tenergie"
+            description="Découvrez notre intervention complète sur un hangar agricole neuf à Belmont de la Loire : pose, raccordement et mise en service pour Tenergie."
+          />
+          <Reveal className="prestataire-example-card clay">
+            <div className="prestataire-example-card__media">
+              <Image
+                src="/img/prestataires/tenergie/equipe-chantier-belmont.jpg"
+                alt="Chantier Tenergie — équipe Electrotech à Belmont de la Loire"
+                fill
+                sizes="(max-width: 768px) 100vw, 420px"
+                className="object-cover"
+              />
+            </div>
+            <div className="prestataire-example-card__body">
+              <span className="pill blue">Belmont de la Loire · Hangar agricole neuf</span>
+              <h3>Installation photovoltaïque complète pour Tenergie</h3>
+              <p>
+                Pose des panneaux sur hangar neuf, raccordements électriques et mise en service — un exemple concret de
+                notre savoir-faire en délégation pour les développeurs solaires.
+              </p>
+              <Link href="/chercher-un-prestataire/exemple/tenergie" className="cta cta--primary">
+                Voir l&apos;exemple Tenergie <span className="arrow">→</span>
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHead
             title="Chantiers et actions menées"
             description="Découvrez quelques exemples de chantiers réalisés et d'actions menées sur différents projets photovoltaïques professionnels."
           />

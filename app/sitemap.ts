@@ -22,6 +22,12 @@ const staticPages: MetadataRoute.Sitemap = [
     priority: 0.85,
   },
   { url: `${SITE_URL}/chercher-un-prestataire/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+  {
+    url: `${SITE_URL}/chercher-un-prestataire/exemple/tenergie/`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.75,
+  },
   { url: `${SITE_URL}/mentions-legales/`, lastModified: now, changeFrequency: "yearly", priority: 0.35 },
   { url: `${SITE_URL}/confidentialite/`, lastModified: now, changeFrequency: "yearly", priority: 0.35 },
   { url: `${SITE_URL}/cgv/`, lastModified: now, changeFrequency: "yearly", priority: 0.35 },
