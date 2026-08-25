@@ -9,14 +9,15 @@ import { DEPARTMENTS, getDepartmentBySlug } from "@/lib/seo/departments";
 import { breadcrumbJsonLd } from "@/lib/seo/schemas";
 import { SITE_URL } from "@/lib/seo/site";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return DEPARTMENTS.map((d) => ({ slug: d.slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const dept = getDepartmentBySlug(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const dept = getDepartmentBySlug(slug);
   if (!dept) return {};
   const title = `Panneaux Solaires ${dept.name} (${dept.code}) | Electrotech PACA`;
   const description = `Installation photovoltaïque professionnelle dans les ${dept.name} : entreprises, industries et collectivités. QualiPV RGE — devis gratuit ☎ 04 91 87 11 08`;
@@ -36,8 +37,9 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function DepartmentSeoPage({ params }: Props) {
-  const dept = getDepartmentBySlug(params.slug);
+export default async function DepartmentSeoPage({ params }: Props) {
+  const { slug } = await params;
+  const dept = getDepartmentBySlug(slug);
   if (!dept) notFound();
 
   const cities = getCitiesByDepartment(dept.slug);

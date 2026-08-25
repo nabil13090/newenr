@@ -8,14 +8,15 @@ import { blogPostingJsonLd, breadcrumbJsonLd } from "@/lib/seo/schemas";
 import { SITE_URL } from "@/lib/seo/site";
 import { PageCTA } from "@/components/ui/PageBlocks";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const post = getPostBySlug(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) return {};
   const canonical = `/blog/articles/${post.slug}/`;
   return {
@@ -36,8 +37,9 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function BlogArticlePage({ params }: Props) {
-  const post = getPostBySlug(params.slug);
+export default async function BlogArticlePage({ params }: Props) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) notFound();
 
   const canonical = `${SITE_URL}/blog/articles/${post.slug}/`;

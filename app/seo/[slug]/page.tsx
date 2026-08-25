@@ -16,14 +16,15 @@ import {
 } from "@/lib/seo/schemas";
 import { SITE_URL } from "@/lib/seo/site";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return CITIES.map((city) => ({ slug: city.slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const city = getCityBySlug(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const city = getCityBySlug(slug);
   if (!city) return {};
   const content = requireCityPageContent(city);
   const canonical = `/seo/${city.slug}/`;
@@ -49,8 +50,9 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function SeoCityPage({ params }: Props) {
-  const city = getCityBySlug(params.slug);
+export default async function SeoCityPage({ params }: Props) {
+  const { slug } = await params;
+  const city = getCityBySlug(slug);
   if (!city) notFound();
 
   const content = requireCityPageContent(city);

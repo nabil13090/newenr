@@ -4,6 +4,8 @@ import { CITIES } from "@/lib/seo/cities";
 import { DEPARTMENTS } from "@/lib/seo/departments";
 import { SITE_URL } from "@/lib/seo/site";
 
+export const dynamic = "force-static";
+
 const now = new Date();
 
 const staticPages: MetadataRoute.Sitemap = [
