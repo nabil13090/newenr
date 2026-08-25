@@ -11,7 +11,7 @@ const AboutFull = () => (
       <Reveal className="about-hero clay">
         <div className="about-hero__bg">
           <Image
-            src="/img/Bâtimentprofessionnel.jpg"
+            src="/img/batiment-professionnel.jpg"
             alt="Installation solaire professionnelle"
             fill
             sizes="100vw"

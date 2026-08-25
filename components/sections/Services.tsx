@@ -24,7 +24,7 @@ const services = [
     badgeLabel: "Stockage",
     title: "Autoconsommation",
     description: "Stockage Huawei et optimisation de votre consommation énergétique.",
-    image: "/img/Entrepôtlogistique.jpg",
+    image: "/img/entrepot-logistique.jpg",
     href: "/panneaux-solaires/stockage-autoconsommation",
   },
   {

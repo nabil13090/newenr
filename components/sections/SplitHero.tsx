@@ -11,14 +11,14 @@ const PANELS = {
     title: "Stockage et Autoconsommation",
     text: "Nous accompagnons les entreprises dans l'équipement de leurs toitures, hangars et bâtiments industriels en solaire photovoltaïque. De l'étude à l'installation en passant par l'accompagnement à la revente d'électricité, nous transformons vos surfaces inutilisées en source de revenus tout en stabilisant vos coûts énergétiques.",
     href: "/panneaux-solaires/stockage-autoconsommation",
-    image: "/img/Entrepôtlogistique.jpg",
+    image: "/img/entrepot-logistique.jpg",
     alt: "Stockage et Autoconsommation",
   },
   prestataire: {
     title: "Développeur, Trouvez votre prestataire",
     text: "Vous êtes maître d'ouvrage ou donneur d'ordre et recherchez un prestataire solaire fiable ? Nous intervenons en délégation, réalisation de chantiers photovoltaïques et renfort opérationnel. Nous nous adaptons aux exigences des industriels et grands comptes avec une approche structurée et orientée résultats.",
     href: "/chercher-un-prestataire",
-    image: "/img/Bâtimentprofessionnel.jpg",
+    image: "/img/batiment-professionnel.jpg",
     alt: "Développeur, Trouvez votre prestataire",
   },
 } as const;

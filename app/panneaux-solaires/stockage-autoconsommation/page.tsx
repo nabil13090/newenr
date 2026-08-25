@@ -11,7 +11,7 @@ import Reveal from "@/components/ui/Reveal";
 import { SectionHead } from "@/components/ui/PageBlocks";
 
 const galleryImages = [
-  "/img/Bâtimentprofessionnel.jpg",
+  "/img/batiment-professionnel.jpg",
   "/img/chantier.png",
   "/img/detail.png",
   "/img/Siteindustriel.jpg",

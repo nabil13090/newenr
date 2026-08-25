@@ -13,7 +13,7 @@ const realisations = [
     pill: "Fos-sur-Mer",
     title: "Entrepôt logistique — 100 kWc",
     meta: "2024 · Sécurisation énergétique",
-    image: "/img/Entrepôtlogistique.jpg",
+    image: "/img/entrepot-logistique.jpg",
   },
   {
     pill: "Pertuis",

@@ -58,7 +58,7 @@ const AutoconsommationHome = () => (
 
         <Reveal className="split__media" delay={100}>
           <Image
-            src="/img/Entrepôtlogistique.jpg"
+            src="/img/entrepot-logistique.jpg"
             alt="Autoconsommation solaire professionnelle"
             width={800}
             height={900}

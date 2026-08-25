@@ -23,7 +23,7 @@ const InstallationsEntreprise = () => (
 
         <div className="entreprise-card__media">
           <Image
-            src="/img/Bâtimentprofessionnel.jpg"
+            src="/img/batiment-professionnel.jpg"
             alt="Bâtiment professionnel — installation solaire photovoltaïque Electrotech"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"

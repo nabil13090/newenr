@@ -22,7 +22,7 @@ const realisations = [
     pill: "Fos-sur-Mer · 100 kWc",
     title: "Entrepôt logistique",
     meta: "Sécurisation énergétique",
-    image: "/img/Entrepôtlogistique.jpg",
+    image: "/img/entrepot-logistique.jpg",
     objectif: "Sécurisation énergétique",
     resultat: "Production d'électricité durable pour le site",
     particularites: "Dimensionnement adapté aux besoins énergétiques du site",
@@ -31,7 +31,7 @@ const realisations = [
     pill: "Marseille · 50 kWc",
     title: "Plateau de bureaux",
     meta: "Revente totale d'électricité",
-    image: "/img/Bâtimentprofessionnel.jpg",
+    image: "/img/batiment-professionnel.jpg",
     objectif: "Revente totale d'électricité",
     resultat: "Génération de revenus via la revente d'électricité",
     particularites: "Optimisation de la surface disponible pour maximiser la production",
@@ -48,9 +48,9 @@ const realisations = [
 ];
 
 const allImages = [
-  { src: "/img/Bâtimentprofessionnel.jpg", name: "Bâtiment professionnel" },
+  { src: "/img/batiment-professionnel.jpg", name: "Bâtiment professionnel" },
   { src: "/img/Siteindustriel.jpg", name: "Site industriel" },
-  { src: "/img/Entrepôtlogistique.jpg", name: "Entrepôt logistique" },
+  { src: "/img/entrepot-logistique.jpg", name: "Entrepôt logistique" },
   { src: "/img/Champs2.jpg", name: "Champs" },
   { src: "/img/chantier.png", name: "Chantier" },
   { src: "/img/detail.png", name: "Détail" },

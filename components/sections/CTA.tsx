@@ -16,7 +16,7 @@ const CTA = () => (
     </div>
     <div className="dband__half right">
       <Image
-        src="/img/Bâtimentprofessionnel.jpg"
+        src="/img/batiment-professionnel.jpg"
         alt="Installation solaire professionnelle"
         fill
         sizes="50vw"

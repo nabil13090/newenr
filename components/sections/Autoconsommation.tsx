@@ -8,7 +8,7 @@ const Autoconsommation = () => (
       <div className="container split reverse">
         <Reveal className="split__media">
           <Image
-            src="/img/Entrepôtlogistique.jpg"
+            src="/img/entrepot-logistique.jpg"
             alt="Autoconsommation solaire"
             width={800}
             height={640}

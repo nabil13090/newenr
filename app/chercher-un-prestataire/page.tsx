@@ -51,7 +51,7 @@ const engagements = [
 ];
 
 const galleryImages = [
-  "/img/Bâtimentprofessionnel.jpg",
+  "/img/batiment-professionnel.jpg",
   "/img/chantier.png",
   "/img/detail.png",
   "/img/Siteindustriel.jpg",

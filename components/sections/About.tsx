@@ -13,7 +13,7 @@ const About = ({ compact = false }: AboutProps) => {
         <div className="container split">
           <Reveal className="split__media">
             <Image
-              src="/img/Bâtimentprofessionnel.jpg"
+              src="/img/batiment-professionnel.jpg"
               alt="Electrotech - expert solaire"
               width={800}
               height={640}
@@ -43,7 +43,7 @@ const About = ({ compact = false }: AboutProps) => {
       <div className="container split reverse">
         <Reveal className="split__media">
           <Image
-            src="/img/Bâtimentprofessionnel.jpg"
+            src="/img/batiment-professionnel.jpg"
             alt="Electrotech - expert solaire photovoltaïque"
             width={800}
             height={640}

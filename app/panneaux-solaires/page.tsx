@@ -8,7 +8,7 @@ import { SectionHead } from "@/components/ui/PageBlocks";
 
 const solutions = [
   {
-    image: "/img/Entrepôtlogistique.jpg",
+    image: "/img/entrepot-logistique.jpg",
     title: "Stockage et Autoconsommation",
     description:
       "Produisez, stockez et consommez votre électricité verte. Transformez votre toiture en source de revenus avec une installation photovoltaïque professionnelle.",
