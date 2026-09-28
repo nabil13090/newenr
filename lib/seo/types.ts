@@ -17,4 +17,5 @@ export type Department = {
   code: string;
   description: string;
   relatedBlogSlug: string;
+  sections: { heading: string; paragraphs: string[] }[];
 };

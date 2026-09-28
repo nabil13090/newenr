@@ -1,12 +1,12 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Panneaux solaires | Solutions photovoltaïques professionnelles | Electrotech Marseille",
+  title: "Panneaux solaires professionnels | Electrotech",
   description: "Découvrez nos solutions de panneaux solaires photovoltaïques : équiper votre entreprise, autoconsommation et revente d'électricité.",
   keywords: "panneaux solaires, photovoltaïque, installation solaire, autoconsommation, revente électricité",
   alternates: { canonical: "/panneaux-solaires/" },
   openGraph: {
-    title: "Panneaux solaires | Solutions photovoltaïques professionnelles",
+    title: "Panneaux solaires professionnels | Electrotech",
     description: "Découvrez nos solutions de panneaux solaires photovoltaïques pour entreprises et professionnels.",
     type: "website",
   },

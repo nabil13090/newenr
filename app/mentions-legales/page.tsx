@@ -31,8 +31,10 @@ export default function MentionsLegales() {
               <ul style={{ marginTop: "1rem", paddingLeft: "1.25rem", listStyle: "disc" }}>
                 <li><strong>Raison sociale :</strong> ELECTROTECH</li>
                 <li><strong>Adresse :</strong> 58 Trav. des Marronniers, 13012 Marseille, France</li>
+                <li><strong>SIRET :</strong> À compléter (validation client)</li>
+                <li><strong>RCS :</strong> À compléter (validation client)</li>
                 <li><strong>Téléphone :</strong> 04 91 87 11 08</li>
-                <li><strong>Email :</strong> contact@electrotech13.fr</li>
+                <li><strong>Email :</strong> contact@electrotech13.fr (à valider avec le client)</li>
               </ul>
             </section>
 
@@ -40,14 +42,21 @@ export default function MentionsLegales() {
               <h2 className="section-title" style={{ fontSize: "var(--font-size-3)", marginBottom: "1rem" }}>
                 2. Directeur de publication
               </h2>
-              <p>Le directeur de publication est le représentant légal de ELECTROTECH.</p>
+              <p>
+                Directeur de publication : à compléter (nom du représentant légal
+                ELECTROTECH — validation client).
+              </p>
             </section>
 
             <section style={{ marginBottom: "2rem" }}>
               <h2 className="section-title" style={{ fontSize: "var(--font-size-3)", marginBottom: "1rem" }}>
                 3. Hébergement
               </h2>
-              <p>Le site est hébergé par Hostinger.</p>
+              <p>
+                Le site est hébergé par <strong>Hostinger</strong> —
+                Hostinger Operations, UAB, Švitrigailos g. 34, LT-03230 Vilnius,
+                Lituanie.
+              </p>
             </section>
 
             <section>

@@ -19,15 +19,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const dept = getDepartmentBySlug(slug);
   if (!dept) return {};
-  const title = `Panneaux Solaires ${dept.name} (${dept.code}) | Electrotech PACA`;
+  const title = `Panneaux solaires ${dept.name} (${dept.code})`;
+  const withBrand = `${title} | Electrotech`;
+  const metaTitle = withBrand.length <= 60 ? withBrand : title.slice(0, 60);
   const description = `Installation photovoltaïque professionnelle dans les ${dept.name} : entreprises, industries et collectivités. QualiPV RGE — devis gratuit ☎ 04 91 87 11 08`;
   const canonical = `/seo/departements/${dept.slug}/`;
   return {
-    title,
+    title: metaTitle,
     description,
     alternates: { canonical },
     openGraph: {
-      title,
+      title: metaTitle,
       description,
       url: `${SITE_URL}${canonical}`,
       type: "website",
@@ -77,6 +79,17 @@ export default async function DepartmentSeoPage({ params }: Props) {
             équipes sur l&apos;ensemble du département pour des projets
             d&apos;autoconsommation, de stockage et de revente de surplus.
           </p>
+
+          {dept.sections.map((section) => (
+            <div key={section.heading} style={{ marginTop: "2rem", maxWidth: "48rem" }}>
+              <h2 className="section-title">{section.heading}</h2>
+              {section.paragraphs.map((p) => (
+                <p key={p.slice(0, 40)} style={{ marginBottom: "1rem" }}>
+                  {p}
+                </p>
+              ))}
+            </div>
+          ))}
 
           <h2 className="section-title" style={{ marginTop: "2rem" }}>
             Villes couvertes dans les {dept.name}

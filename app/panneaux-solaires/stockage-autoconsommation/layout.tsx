@@ -1,12 +1,12 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Stockage et Autoconsommation | Solaire photovoltaïque | Electrotech Marseille",
+  title: "Stockage et autoconsommation solaire | Electrotech",
   description: "Stockage et autoconsommation solaire : produire, stocker et consommer votre électricité verte. Solutions photovoltaïques pour les professionnels.",
   keywords: "stockage solaire, autoconsommation, panneaux solaires, photovoltaïque, installation solaire, revente électricité",
   alternates: { canonical: "/panneaux-solaires/stockage-autoconsommation/" },
   openGraph: {
-    title: "Stockage et Autoconsommation | Electrotech Marseille",
+    title: "Stockage et autoconsommation solaire | Electrotech",
     description: "Produire, stocker et consommer votre électricité verte. Solutions photovoltaïques pour les professionnels.",
     type: "website",
   },

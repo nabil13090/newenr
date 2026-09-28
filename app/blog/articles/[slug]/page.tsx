@@ -19,12 +19,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
   const canonical = `/blog/articles/${post.slug}/`;
+  const withBrand = `${post.title} | Electrotech`;
+  const title = withBrand.length <= 60 ? withBrand : post.title.slice(0, 60);
   return {
-    title: `${post.title} | Electrotech`,
+    title,
     description: post.description,
     alternates: { canonical },
     openGraph: {
-      title: post.title,
+      title,
       description: post.description,
       url: `${SITE_URL}${canonical}`,
       type: "article",
