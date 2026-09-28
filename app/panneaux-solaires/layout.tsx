@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: "Découvrez nos solutions de panneaux solaires photovoltaïques pour entreprises et professionnels.",
     type: "website",
   },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 export default function PanneauxSolairesLayout({

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: "Vous recherchez un prestataire photovoltaïque fiable ? Découvrez notre expertise terrain pour vos projets solaires professionnels et grands comptes.",
     type: "website",
   },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 export default function ChercherUnPrestataireLayout({

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: "Produire, stocker et consommer votre électricité verte. Solutions photovoltaïques pour les professionnels.",
     type: "website",
   },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 export default function StockageAutoconsommationLayout({
