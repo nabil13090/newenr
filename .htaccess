@@ -63,6 +63,10 @@
   # Redirection HTTPS (si SSL activé)
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Redirections permanentes (301) — anciennes URLs
+  RewriteRule ^panneaux-solaires/autoconsommation/?$ /panneaux-solaires/stockage-autoconsommation/ [R=301,L]
+  RewriteRule ^equiper-mon-entreprise/?$ /panneaux-solaires/stockage-autoconsommation/ [R=301,L]
   
   # PRIORITÉ 1: Servir directement les fichiers statiques existants
   # Si le fichier existe physiquement, le servir directement (STOP ici)
