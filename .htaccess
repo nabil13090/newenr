@@ -66,6 +66,7 @@
 
   # Redirections permanentes (301) — anciennes URLs
   RewriteRule ^panneaux-solaires/autoconsommation/?$ /panneaux-solaires/stockage-autoconsommation/ [R=301,L]
+  RewriteRule ^panneaux-solaires/equiper-mon-entreprise/?$ /panneaux-solaires/stockage-autoconsommation/ [R=301,L]
   RewriteRule ^equiper-mon-entreprise/?$ /panneaux-solaires/stockage-autoconsommation/ [R=301,L]
   
   # PRIORITÉ 1: Servir directement les fichiers statiques existants
