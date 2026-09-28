@@ -60,6 +60,7 @@ export default async function DepartmentSeoPage({ params }: Props) {
         imageSrc="/img/Siteindustriel.jpg"
         customDescription={dept.description}
         showScrollIndicator={false}
+        titleAs="p"
         breadcrumb={[
           { label: "Accueil", href: "/" },
           { label: dept.name },

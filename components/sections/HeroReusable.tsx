@@ -14,6 +14,8 @@ interface HeroReusableProps {
   titleMaxLines?: 2 | 3;
   breadcrumb?: { label: string; href?: string }[];
   label?: string;
+  /** Use "p" when the page already has a content <h1>. */
+  titleAs?: "h1" | "p";
 }
 
 const HeroReusable = ({
@@ -25,6 +27,7 @@ const HeroReusable = ({
   titleMaxLines,
   breadcrumb,
   label,
+  titleAs = "h1",
 }: HeroReusableProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -85,7 +88,11 @@ const HeroReusable = ({
         {(label || subtitle) && (
           <span className="section-label white">{label || subtitle}</span>
         )}
-        <h1 className={titleClass}>{title}</h1>
+        {titleAs === "p" ? (
+          <p className={titleClass}>{title}</p>
+        ) : (
+          <h1 className={titleClass}>{title}</h1>
+        )}
         {description && <p className="pagehero__desc">{description}</p>}
       </div>
     </section>

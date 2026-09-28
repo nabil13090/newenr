@@ -28,12 +28,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!city) return {};
   const content = requireCityPageContent(city);
   const canonical = `/seo/${city.slug}/`;
+  const baseTitle = `Panneaux solaires ${city.name}`;
+  const withBrand = `${baseTitle} | Electrotech`;
+  const title = withBrand.length <= 60 ? withBrand : baseTitle.slice(0, 60);
   return {
-    title: content.title,
+    title,
     description: content.metaDescription,
     alternates: { canonical },
     openGraph: {
-      title: content.title,
+      title,
       description: content.metaDescription,
       url: `${SITE_URL}${canonical}`,
       type: "website",
@@ -81,6 +84,7 @@ export default async function SeoCityPage({ params }: Props) {
         imageSrc="/img/toit.jpg"
         customDescription={content.heroDescription}
         showScrollIndicator={false}
+        titleAs="p"
         breadcrumb={[
           { label: "Accueil", href: "/" },
           { label: "Panneaux solaires", href: "/seo/" },

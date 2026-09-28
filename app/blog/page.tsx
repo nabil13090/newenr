@@ -32,6 +32,7 @@ export default function BlogIndexPage() {
         imageSrc="/img/stockage.png"
         customDescription="Guides pratiques, analyses et conseils d'experts pour vos projets photovoltaïques professionnels en région PACA."
         showScrollIndicator={false}
+        titleAs="p"
         breadcrumb={[{ label: "Accueil", href: "/" }, { label: "Blog" }]}
       />
 

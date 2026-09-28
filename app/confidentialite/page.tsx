@@ -5,6 +5,7 @@ import MiniHero from "@/components/ui/MiniHero";
 export const metadata: Metadata = {
   title: "Politique de Confidentialité - Electrotech",
   description: "Politique de confidentialité et protection des données personnelles",
+  alternates: { canonical: "/confidentialite/" },
 };
 
 export default function Confidentialite() {

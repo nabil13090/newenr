@@ -97,32 +97,6 @@ const staticPages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.8,
   },
-  {
-    url: `${SITE_URL}/chercher-un-prestataire/exemple/tenergie/`,
-    lastModified: fileLastModified(
-      "app/chercher-un-prestataire/exemple/tenergie/page.tsx"
-    ),
-    changeFrequency: "monthly",
-    priority: 0.75,
-  },
-  {
-    url: `${SITE_URL}/mentions-legales/`,
-    lastModified: fileLastModified("app/mentions-legales/page.tsx"),
-    changeFrequency: "yearly",
-    priority: 0.35,
-  },
-  {
-    url: `${SITE_URL}/confidentialite/`,
-    lastModified: fileLastModified("app/confidentialite/page.tsx"),
-    changeFrequency: "yearly",
-    priority: 0.35,
-  },
-  {
-    url: `${SITE_URL}/cgv/`,
-    lastModified: fileLastModified("app/cgv/page.tsx"),
-    changeFrequency: "yearly",
-    priority: 0.35,
-  },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

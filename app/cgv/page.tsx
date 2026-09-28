@@ -5,6 +5,7 @@ import MiniHero from "@/components/ui/MiniHero";
 export const metadata: Metadata = {
   title: "Conditions Générales de Vente - Electrotech",
   description: "Conditions générales de vente des services Electrotech",
+  alternates: { canonical: "/cgv/" },
 };
 
 export default function CGV() {

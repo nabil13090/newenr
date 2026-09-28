@@ -28,6 +28,7 @@ export default function SeoHubPage() {
         imageSrc="/img/Siteindustriel.jpg"
         customDescription="Electrotech intervient dans toute la région PACA. Retrouvez notre expertise près de chez vous."
         showScrollIndicator={false}
+        titleAs="p"
         breadcrumb={[{ label: "Accueil", href: "/" }, { label: "Zones PACA" }]}
       />
 

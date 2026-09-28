@@ -41,6 +41,7 @@ export default function FaqPage() {
         imageSrc="/img/autocons.png"
         customDescription="Réponses d'expert sur l'installation solaire pour entreprises, l'autoconsommation, les aides et la maintenance en PACA."
         showScrollIndicator={false}
+        titleAs="p"
         breadcrumb={[{ label: "Accueil", href: "/" }, { label: "FAQ" }]}
       />
 

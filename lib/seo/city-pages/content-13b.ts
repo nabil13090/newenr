@@ -138,7 +138,6 @@ export const CITY_PAGES_13_B: Record<string, CityPageContent> = {
     neighborLinks: [
       { slug: "cassis", name: "Cassis" },
       { slug: "aubagne", name: "Aubagne" },
-      { slug: "saint-cyr-sur-mer", name: "Saint-Cyr-sur-Mer" }
     ],
     relatedBlogSlug: "installation-photovoltaique-marseille-professionnels"
   },
@@ -208,8 +207,7 @@ export const CITY_PAGES_13_B: Record<string, CityPageContent> = {
     ],
     neighborLinks: [
       { slug: "rognac", name: "Rognac" },
-      { slug: "marignane", name: "Marignane" },
-      { slug: "les-pennes-mirabeau", name: "Les Pennes-Mirabeau" }
+      { slug: "pennes-mirabeau", name: "Les Pennes-Mirabeau" },
     ],
     relatedBlogSlug: "panneaux-solaires-entrepots-logistiques-industrie"
   },
@@ -276,9 +274,9 @@ export const CITY_PAGES_13_B: Record<string, CityPageContent> = {
       }
     ],
     neighborLinks: [
-      { slug: "saint-martin-de-crau", name: "Saint-Martin-de-Crau" },
-      { slug: "tarascon", name: "Tarascon" },
-      { slug: "istres", name: "Istres" }
+      { slug: "fos-sur-mer", name: "Fos-sur-Mer" },
+      { slug: "istres", name: "Istres" },
+      { slug: "salon-de-provence", name: "Salon-de-Provence" },
     ],
     relatedBlogSlug: "agrivoltaisme-paca-agriculture-solaire"
   },
@@ -348,8 +346,7 @@ export const CITY_PAGES_13_B: Record<string, CityPageContent> = {
     ],
     neighborLinks: [
       { slug: "aix-en-provence", name: "Aix-en-Provence" },
-      { slug: "meyreuil", name: "Meyreuil" },
-      { slug: "bouc-bel-air", name: "Bouc-Bel-Air" }
+      { slug: "bouc-bel-air", name: "Bouc-Bel-Air" },
     ],
     relatedBlogSlug: "transition-energetique-pme-solaire-2025"
   },

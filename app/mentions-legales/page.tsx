@@ -5,6 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Mentions Légales - Electrotech",
   description: "Mentions légales du site Electrotech - Solaire photovoltaïque",
+  alternates: { canonical: "/mentions-legales/" },
 };
 
 export default function MentionsLegales() {
@@ -25,7 +26,7 @@ export default function MentionsLegales() {
                 1. Éditeur du site
               </h2>
               <p>
-                Le site <strong>electrotech-sud.fr</strong> est édité par :
+                Le site <strong>electrotechenr.fr</strong> est édité par :
               </p>
               <ul style={{ marginTop: "1rem", paddingLeft: "1.25rem", listStyle: "disc" }}>
                 <li><strong>Raison sociale :</strong> ELECTROTECH</li>
